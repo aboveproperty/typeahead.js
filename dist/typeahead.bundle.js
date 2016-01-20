@@ -1,7 +1,7 @@
 /*!
  * typeahead.js 0.10.5
  * https://github.com/twitter/typeahead.js
- * Copyright 2013-2016 Twitter, Inc. and other contributors; Licensed MIT
+ * Copyright 2013-2015 Twitter, Inc. and other contributors; Licensed MIT
  */
 
 (function($) {
@@ -1517,9 +1517,6 @@
             },
             _onFocused: function onFocused() {
                 this.isActivated = true;
-                var val = this.input.getInputValue();
-                var query = Input.normalizeQuery(val);
-                this.dropdown.update(query);
                 this.dropdown.open();
             },
             _onBlurred: function onBlurred() {

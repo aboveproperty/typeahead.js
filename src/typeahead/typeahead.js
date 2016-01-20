@@ -126,9 +126,6 @@ var Typeahead = (function() {
 
     _onFocused: function onFocused() {
       this.isActivated = true;
-      var val = this.input.getInputValue();
-      var query = Input.normalizeQuery(val);
-      this.dropdown.update(query);
       this.dropdown.open();
     },
 
